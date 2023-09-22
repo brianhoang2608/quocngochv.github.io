@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #4dabf7;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 35px;
+    color: blue;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.mg-top {
+    margin-top: 100px;
+}
+.pd-x {
+    padding: 5px 20px;
+}
+.pd-left-2 {
+    padding-left: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    
+    "goals goals team timeline"
+    "scopes scopes primary timeline";
+    background-color: blue;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.goals {
+    grid-area: goals;
+  }
+.team {
+    grid-area: team;
+}
+.timeline {
+    grid-area: timeline;
+}
+.scopes {
+    grid-area: scopes;
+}
+.primary {
+    grid-area: primary;
+}
+
+.goals,
+.team,
+.timeline,
+.scopes,
+.primary {
+    width: 100%;
+    background-color: aliceblue;
+    text-align: start;
+}
+
+.list-format {
+    border-top: #333 solid 1px;
+}
+.list-format i {
+    font-size: 30px;
+}
+.goals .list-format i{
+    padding: 5px 50px;
+}
+
+.item-format {
+    border-bottom: #d8d7d7 solid 1px;
+    padding-top: 10px;
+}
+
+.team .item-format {
+    border-bottom: unset;
+    padding-top: unset;
+}
+
+.team .item-format:first-child {
+    padding-top: 10px;
+}
+.number-format {
+    color: aliceblue;
+    background-color: pink;
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto;
+    border: #333 solid 1px;
+}
+
+.timeline .item-format {
+    border-bottom: aqua dotted 2px;
+}
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+    
+        "goals" "scopes" "team" "primary" "timeline";
+    }
+    /* .item-format {
+        text-align: center;
+    } */
+    .
+    .number-format {
+        margin: 15px;
+    }
+}

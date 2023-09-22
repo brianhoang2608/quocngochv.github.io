@@ -1,0 +1,38 @@
+@media screen and (max-width: 991px) {
+    nav::after {
+      content: "";
+      display: none;
+    }
+    .nav-pd {
+        gap:100px;
+    }
+    .nav-item:nth-child(1) {
+        padding: 10px;
+    }
+    .nav-item:nth-child(2) {
+        padding: 10px;
+      }
+    .grid--3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "g-left g-right " 
+        "g-fleft g-fright"
+        "midle main";
+    }
+    .favorit {
+        display: unset;
+    }
+    .favorit i {
+        padding: unset;
+    }
+
+    #certificate .d-flex{
+        display: unset !important ;
+    }
+    .lead {
+        font-size: unset;
+    }
+    .yearcv {
+        padding: unset;
+    }

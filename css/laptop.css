@@ -1,0 +1,84 @@
+nav::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../images/avatar.png);
+    background-size: cover;
+  
+    /* Dieu chinh ve giua */
+    transform: translate(-50%, -25%);
+  }
+.txt-nav i {
+    padding-right: 10px;
+}
+#info {
+    margin: 30px auto;
+}
+.info {
+    border: 1px solid #bdbdbd;
+    padding: 30px;
+}
+.favorit i {
+    font-size: 30px;
+    padding: 30px;
+}
+.level-on {
+    border: 1px solid var(--primary-color);
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+  
+.level-off {
+    border: 1px solid #868e96;
+    width: 50px;
+    height: 3px;
+    background-color: #868e96;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.grid-images img {
+    width: 250px;
+    padding-right: 10px;
+}
+.grid-last {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    padding-top: 20px;
+    border-top: 1px solid #f7b34d;
+}
+  .grid-item {
+    margin: 10px;
+}
+.cv {
+    border: #333 solid 1px;
+}
+.cv img {
+    width: 100%; 
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.yearcv {
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+.hide {
+    display: none;
+}
+.view-more {
+    display: none;
+}
+
+  
